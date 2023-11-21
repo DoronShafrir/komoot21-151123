@@ -21,11 +21,12 @@ class K_Analize():
         print('This is conf', self.conf)
         # self.start_date = '1/1/2021'
         self.start_date = conf[0]
-        self.fetch = Fetch_Data()
+        # self.fetch = Fetch_Data()
 
     def fill_data(self):
         k_stat = Stat()
-        if self.fetch.update_main():
+        # if self.fetch.update_main():
+        if True:
             self.komoot_tours = pd.read_csv('main.csv', parse_dates=[1])
         else:
             print("main does not exist")
